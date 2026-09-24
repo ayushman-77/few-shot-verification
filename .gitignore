@@ -1,0 +1,37 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Models and Weights (Too large for GitHub)
+*.pth
+*.pt
+*.onnx
+*.h5
+*.pb
+
+# Datasets (Too large for GitHub)
+datasets/*
+!datasets/.gitkeep
+
+# Node / React
+node_modules/
+dist/
+build/
+.npm
+
+# IDEs and OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
