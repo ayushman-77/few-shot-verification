@@ -38,7 +38,7 @@ This model is trained on the Labeled Faces in the Wild (LFW) dataset. To train o
 
 4. Once completed, download `siamese_model.pth` from the Kaggle output.
 
-### Local Inference
+### Local Inference (Manual)
 1. Place your trained `siamese_model.pth` into the `backend/` directory.
 2. Navigate to `backend/` and start the server:
    ```bash
@@ -48,6 +48,16 @@ This model is trained on the Labeled Faces in the Wild (LFW) dataset. To train o
    ```bash
    npm run dev
    ```
+
+### Running with Docker
+The easiest way to run the entire application locally is using Docker Compose.
+1. Place your trained `siamese_model.pth` into the `backend/` directory.
+2. Make sure Docker Desktop is running on your machine.
+3. Run the following command from the root project directory:
+   ```bash
+   docker-compose up --build -d
+   ```
+4. The frontend UI will be available at `http://localhost:5173` and the API at `http://localhost:8000`.
 
 ## Technologies
 - **PyTorch**: Deep learning framework
